@@ -363,7 +363,7 @@ function build_visit
         FEATURES="${FEATURES} -DCPACK_RPM_SPEC_MORE_DEFINE:STRING=\"%global_python_bytecompile_errors_terminate_build 0\""
     fi
 
-    issue_command "${CMAKE_BIN}" ${FEATURES} .
+    issue_command "${CMAKE_BIN}" ${FEATURES} ../src
 
     if [[ $? != 0 ]] ; then
         echo "VisIt configure failed.  Giving up"

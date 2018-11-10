@@ -209,7 +209,7 @@ function build_adios2
         cfg_opts="${cfg_opts} -DCMAKE_INSTALL_PREFIX:PATH=${adios2_install_path}"
         cfg_opts="${cfg_opts} -DCMAKE_C_FLAGS:STRING=\"${C_OPT_FLAGS}\""
         cfg_opts="${cfg_opts} -DCMAKE_CXX_FLAGS:STRING=\"${CXX_OPT_FLAGS}\""
-        cfg_opts="${cfg_opts} -DADIOS2_USE_SST:BOOL=OFF"
+        cfg_opts="${cfg_opts} -DADIOS2_USE_SST:BOOL=ON"
 
         if [[ "$bt" == "ser" ]]; then
             cfg_opts="${cfg_opts} -DADIOS2_USE_MPI:BOOL=OFF"
